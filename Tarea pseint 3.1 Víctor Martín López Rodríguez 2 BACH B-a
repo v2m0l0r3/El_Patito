@@ -1,0 +1,32 @@
+ //calcula el promedio de una lista de N datos
+
+Algoritmo promedio
+Repetir
+	Escribir "Ingrese la cantidad de da datos:"
+	Leer n
+	
+	mientras (n<=0)
+		Escribir "ERROR. Introduzca un número positivo"
+		Escribir "Ingrese la cantidad de datos:"
+		Leer n 
+	FinMientras
+	
+	acum<-0
+	// El fallo se encuentra en el n+1 
+	Para i<-1 Hasta n Hacer
+		Escribir "Ingrese un dato positivo " ,i,": "
+		Leer dato
+		acum<-acum+dato
+	FinPara
+	
+	prom<-acum/n
+	
+	Escribir "El promedio es:",prom
+	
+	Escribir "Si quiere parar pulse: N"
+	Escribir "Si quiere continuar pulse cualquier otra tecla"
+	leer var
+	
+Hasta que (var="n") o (var="N")
+Escribir "¡Hasta la proxima!"
+FinAlgoritmo
